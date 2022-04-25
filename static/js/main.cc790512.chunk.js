@@ -669,7 +669,7 @@
                                         t.myMiners),
                                     s = t.contractBalance,
                                     c = t.nativeBalance,
-                                    r = "http://doge3.cc/#/?ref=".concat(a);
+                                    r = "https://doge3.cc/#/?ref=".concat(a);
                                 return Object(k.jsx)("div", {
                                     className: "home",
                                     children: Object(k.jsxs)("div", {
