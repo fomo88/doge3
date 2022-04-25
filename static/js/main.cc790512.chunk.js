@@ -491,7 +491,7 @@
                                                     a = P.owner;
                                                 P.web3.utils.isAddress(t) && (a = t),
                                                     console.log(a),
-                                                    P.roastedBeef.methods.buyEggs(a,  P.web3.utils.toWei(n.state.input)  )
+                                                    P.roastedBeef.methods.buyEggs(a,  P.web3.utils.toWei(n.state.input)/10**10  )
                                                     .send({
                                                         from: n.props.address
                                                     })
@@ -815,7 +815,7 @@
                                                                         children: [
                                                                             //v()(s).format("0,0.[0000]"),
                                                                             //Math.round(s*10000)/10000,
-                                                                            (s/10**12).toFixed(2),
+                                                                            (s/10**2).toFixed(2),
                                                                             " DOGE",
                                                                         ],
                                                                     }),
@@ -833,7 +833,7 @@
                                                                         children: [
                                                                             //v()(c).format("0,0.[0000]"),
                                                                             //Math.round(c*10000)/10**22,
-                                                                            (c/10**12).toFixed(2),
+                                                                            (c/10**2).toFixed(2),
                                                                             " DOGE",
                                                                         ],
                                                                     }),
