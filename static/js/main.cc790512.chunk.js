@@ -476,11 +476,11 @@
                                     
                                     if (n.props.address && "0x00000000000000000000000000000000deadbeef" !== n.props.address) {
                                         if (Number(n.props.nativeBalance) < Number(n.state.input)) {
-                                            m.b.warning("SHIB数量不足");
+                                            m.b.warning("DOGE数量不足");
                                             console.log("nativeBalance", Number(n.props.nativeBalance));
                                             console.log("input", Number(n.state.input));
                                         } else if (1 * n.state.input < 0.01)
-                                            m.b.warning("最少质押 0.01 SHIB");
+                                            m.b.warning("最少质押 0.01 DOGE");
 										    //console.log(n.props.nativeBalance);
                                         else {
                                             
@@ -575,7 +575,7 @@
                                                     }
                                                     return (
                                                         m.b.warning(
-                                                            "继续质押的数量必须多于 0.01 SHIB"
+                                                            "继续质押的数量必须多于 0.01 DOGE"
                                                         ),
                                                         e.abrupt("return")
                                                     );
@@ -670,7 +670,7 @@
                                         t.myMiners),
                                     s = t.contractBalance,
                                     c = t.nativeBalance,
-                                    r = "https://SHIB3.cc/#/?ref=".concat(a);
+                                    r = "https://DOGE3.cc/#/?ref=".concat(a);
                                 return Object(k.jsx)("div", {
                                     className: "home",
                                     children: Object(k.jsxs)("div", {
@@ -718,7 +718,7 @@
                                                                 }),
                                                             }),
                                                             Object(k.jsx)("a", {
-                                                              href: "https://twitter.com/GrilledSHIB",
+                                                              href: "https://twitter.com/GrilledDOGE",
                                                               target: "_blank",
                                                               rel: "noopener noreferrer",
                                                               children: Object(k.jsx)("img", {
@@ -727,7 +727,7 @@
                                                               }),
                                                             }),
                                                             Object(k.jsx)("a", {
-                                                                href: "https://t.me/GrilledSHIB",
+                                                                href: "https://t.me/GrilledDOGE",
                                                                 target: "_blank",
                                                                 rel: "noopener noreferrer",
                                                                 children: Object(k.jsx)("img", {
@@ -754,7 +754,7 @@
                                             }),
                                             Object(k.jsx)("p", {
                                                 className: "slogan",
-                                                children: "SHIB质押奖励池，每24小时10%的质押奖励和13%的直推奖励",
+                                                children: "DOGE质押奖励池，每24小时10%的质押奖励和13%的直推奖励",
                                             }),
                                             K() ?
                                             null :
@@ -808,7 +808,7 @@
                                                                 children: [
                                                                     Object(k.jsx)("div", {
                                                                         className: "name",
-                                                                        children: "总矿池",
+                                                                        children: "矿池总量",
                                                                     }),
                                                                     Object(k.jsxs)("div", {
                                                                         className: "value",
@@ -816,7 +816,7 @@
                                                                             //v()(s).format("0,0.[0000]"),
                                                                             //Math.round(s*10000)/10000,
                                                                             (s/10**12).toFixed(2),
-                                                                            " SHIB",
+                                                                            " DOGE",
                                                                         ],
                                                                     }),
                                                                 ],
@@ -826,7 +826,7 @@
                                                                 children: [
                                                                     Object(k.jsx)("div", {
                                                                         className: "name",
-                                                                        children: "钱包",
+                                                                        children: "我的钱包",
                                                                     }),
                                                                     Object(k.jsxs)("div", {
                                                                         className: "value",
@@ -834,7 +834,7 @@
                                                                             //v()(c).format("0,0.[0000]"),
                                                                             //Math.round(c*10000)/10**22,
                                                                             (c/10**12).toFixed(2),
-                                                                            " SHIB",
+                                                                            " DOGE",
                                                                         ],
                                                                     }),
                                                                 ],
@@ -844,14 +844,14 @@
                                                                 children: [
                                                                     Object(k.jsx)("div", {
                                                                         className: "name",
-                                                                        children: "你的算力",
+                                                                        children: "我的算力",
                                                                     }),
                                                                     Object(k.jsxs)("div", {
                                                                         className: this.state.blinkMyMiners ?
                                                                             "value blink_me" : "value",
                                                                         children: [
                                                                             v()(n/10**2).format("0,0.[0000]"),
-                                                                            " GSHIB",
+                                                                            " GDOGE",
                                                                         ],
                                                                     }),
                                                                 ],
@@ -864,7 +864,7 @@
                                                                 className: "antInput",
                                                                 suffix: Object(k.jsx)("span", {
                                                                     className: "suffix",
-                                                                    children: "SHIB",
+                                                                    children: "DOGE",
                                                                 }),
                                                             }),
                                                             Object(k.jsxs)("div", {
@@ -885,7 +885,7 @@
                                                                                 onClick: function() {
                                                                                     e.buy();
                                                                                 },
-                                                                                children: " 质押SHIB",
+                                                                                children: " 质押DOGE",
                                                                             }),
                                                                         ],
                                                                     }),
@@ -899,7 +899,7 @@
                                                                         children: [
                                                                             Object(k.jsx)("div", {
                                                                                 className: "name",
-                                                                                children: "你的产量",
+                                                                                children: "我的产量",
                                                                             }),
                                                                             Object(k.jsx)("div", {
                                                                                 className: this.state.blinkMyEarns ?
@@ -911,7 +911,7 @@
                                                                                     separator: ",",
                                                                                     decimals: 4,
                                                                                     decimal: ".",
-                                                                                    suffix: "SHIB",
+                                                                                    suffix: "DOGE",
                                                                                 }),
                                                                             }),
                                                                         ],
@@ -1005,7 +1005,7 @@
                                                                         children: "推广 链接",
                                                                     }),
                                                                     Object(k.jsx)("p", {
-                                                                        children: "你可以从任何使用你的邀请链接参与质押的玩家那里获取 13% 的SHIB奖励",
+                                                                        children: "你可以从任何使用你的邀请链接参与质押的玩家那里获取 13% 的DOGE奖励",
                                                                     }),
                                                                     Object(k.jsxs)("div", {
                                                                         className: "refWrapper",
